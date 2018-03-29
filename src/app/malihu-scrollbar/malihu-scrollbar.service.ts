@@ -35,7 +35,7 @@ export class MalihuScrollbarService {
     if (typeof element === 'string' || element instanceof String) {
       return $(element);
     }
-    if ((typeof element === 'object' || element instanceof Object) && element instanceof HTMLElement) {
+    if (typeof element === 'object' && element instanceof HTMLElement) {
       return $(element);
     }
     if (element instanceof jQuery || 'jquery' in Object(element)) {
